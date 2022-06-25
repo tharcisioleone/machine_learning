@@ -3,7 +3,7 @@
 
 ## Maschine Learning for Data Analysis
 ## Step 0: Importing Libraries
-## Step-2 EDA
+## Step-2 Exploratory Data Analysis
 ## Step-3 Data Preparation
 ## Step 4: Splitting the Data into Training and Testing Sets
 ## Step-5 Building model using statsmodel, for the detailed statistics
@@ -99,7 +99,7 @@ train_data["Fare"]=np.where(train_data["Fare"]>upper_bound,upper_bound,train_dat
 train_data["Fare"]=np.where(train_data["Fare"]<lower_bound,lower_bound,train_data["Fare"])
 
 
-## Step-2 EDA
+## Step-2: Exploratory Data Analysis
 
 for i in cate_cols:
     sns.countplot(train_data[i])
@@ -120,7 +120,8 @@ plt.show()
 train_data.head()
 
 
-## Step-3 Data Preparation
+
+## Step-3: Data Preparation
 
 # Dummy Creation
 train_data.info()
