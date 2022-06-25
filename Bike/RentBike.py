@@ -41,7 +41,7 @@ def MAE(actual, pred):
     return metrics.mean_absolute_error(actual, pred)
 
 def score(pred):
-    solution = pd.read_csv("C:/Users/tharc/Documents/GitHub/machine_learning/Bike/solution.csv").cnt
+    solution = pd.read_csv("../input/solution.csv").cnt
     return MAE(solution, pred)
 
 mae_example = pd.DataFrame({"real": [10,10,25], "prediction": [5,15,5]})
@@ -49,4 +49,56 @@ mae_example["Absolute Error"] = np.abs(mae_example.prediction - mae_example.real
 print(mae_example)
 
 print(MAE(mae_example.real, mae_example.prediction)) # MAE = 10
+
+
+
+# 4. Putting MAE in relation to a basis prediction
+
+pred["cnt"] = 0 # Rent number is assumed as 0 as example only.
+#print(score(pred.cnt)) # This is the maximal MAE that you can have.
+
+
+
+#pred["cnt"] = train.cnt.mean() # Rent number is the mean value
+#score(pred.cnt)
+
+#score(pred.cnt)
+
+#df = pd.concat([train, test], sort=False)
+
+#df.datetime = pd.to_datetime(df.datetime)
+
+#df["hour"] = df.datetime.dt.hour
+#df["dow"] = df.datetime.dt.weekday # weekday_name
+#df["weekend"] = (df.dow >= 5).astype(int)
+
+#df.head(10)
+
+#df[df.cnt.notnull()].groupby(["hour", "weekend"]).cnt.mean().unstack().plot(figsize=(20, 9))
+
+#train = df[df.cnt.notnull()]
+#y_train = train.cnt
+#X_train = train.drop(["datetime", "cnt"], axis=1)
+#X_test = df[df.cnt.isnull()].drop(["datetime", "cnt"], axis=1)
+
+
+#mean_by_weekend_hour = train.groupby(["weekend", "hour"]).cnt.mean()
+#joined = X_test.join(mean_by_weekend_hour, on=["weekend", "hour"], how="left")
+#joined[joined.weekend == 0].head()
+
+
+#pred["cnt"] = joined.cnt
+
+#score(pred.cnt)
+
+#df_lgb = lgb.Dataset(X_train, label=y_train)
+#params = {"objective": "mae"}
+#model = lgb.train(params, df_lgb)
+
+#pred["cnt"] = model.predict(X_test)
+
+
+#score(pred.cnt)
+
+
 
