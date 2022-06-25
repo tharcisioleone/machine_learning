@@ -1,7 +1,7 @@
 # Author: Tharcisio Leone #
 # Dataset: Salary #
 
-## Maschine Learning using Linear Regression
+## Using Linear Regression for Maschine Learning
 # 0. Importing Libraries
 # 1. Select a Kaggle data set that is suitable for Linear Regression.
 # 2. Show the first five rows of the data set.
@@ -45,7 +45,7 @@ xtrain, xtest, ytrain, ytest = train_test_split(yrs_exp_vector, sal, train_size 
 xtrain
 
 
-# 5. Fit your training split to the regression model.
+# 5. Fit the training split to the regression model.
 plt.scatter(xtrain, ytrain, color = 'purple')
 plt.xlabel("Years of Experience")
 plt.ylabel("Salary in $")
@@ -53,7 +53,7 @@ plt.title("Training Data")
 plt.show()
 
 
-# 6. Show your regression model’s score.
+# 6. Show the regression model’s score.
 lm = LinearRegression()
 lm.fit(xtrain, ytrain)
 y_predict = lm.predict(xtest)
@@ -62,7 +62,7 @@ print(f"Test accuracy {round(lm.score(xtest,ytest)*100,2)}%")
 
 
 
-# 7. Draw at least three conclusions from your regression model.
+# 7. Draw at least three conclusions from the regression model.
 # After 7 years salary stays pretty stable until you reach 14 years then it increases significantly
 # Between 2-5 years of experience the salary does not change very much.
 # It seems that 4-10 years of experience is ideal for most employers.
