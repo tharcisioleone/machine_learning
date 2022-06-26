@@ -59,43 +59,43 @@ pred["cnt"] = 0 # Rent number is assumed as 0 as example only.
 
 
 
-#pred["cnt"] = train.cnt.mean() # Rent number is the mean value
+pred["cnt"] = train.cnt.mean() # Rent number is the mean value
 #score(pred.cnt)
 
 #score(pred.cnt)
 
-#df = pd.concat([train, test], sort=False)
+df = pd.concat([train, test], sort=False)
 
-#df.datetime = pd.to_datetime(df.datetime)
+df.datetime = pd.to_datetime(df.datetime)
 
-#df["hour"] = df.datetime.dt.hour
-#df["dow"] = df.datetime.dt.weekday # weekday_name
-#df["weekend"] = (df.dow >= 5).astype(int)
+df["hour"] = df.datetime.dt.hour
+df["dow"] = df.datetime.dt.weekday # weekday_name
+df["weekend"] = (df.dow >= 5).astype(int)
 
-#df.head(10)
+df.head(10)
 
-#df[df.cnt.notnull()].groupby(["hour", "weekend"]).cnt.mean().unstack().plot(figsize=(20, 9))
+df[df.cnt.notnull()].groupby(["hour", "weekend"]).cnt.mean().unstack().plot(figsize=(20, 9))
 
-#train = df[df.cnt.notnull()]
-#y_train = train.cnt
-#X_train = train.drop(["datetime", "cnt"], axis=1)
-#X_test = df[df.cnt.isnull()].drop(["datetime", "cnt"], axis=1)
-
-
-#mean_by_weekend_hour = train.groupby(["weekend", "hour"]).cnt.mean()
-#joined = X_test.join(mean_by_weekend_hour, on=["weekend", "hour"], how="left")
-#joined[joined.weekend == 0].head()
+train = df[df.cnt.notnull()]
+y_train = train.cnt
+X_train = train.drop(["datetime", "cnt"], axis=1)
+X_test = df[df.cnt.isnull()].drop(["datetime", "cnt"], axis=1)
 
 
-#pred["cnt"] = joined.cnt
+mean_by_weekend_hour = train.groupby(["weekend", "hour"]).cnt.mean()
+joined = X_test.join(mean_by_weekend_hour, on=["weekend", "hour"], how="left")
+joined[joined.weekend == 0].head()
+
+
+pred["cnt"] = joined.cnt
 
 #score(pred.cnt)
 
-#df_lgb = lgb.Dataset(X_train, label=y_train)
-#params = {"objective": "mae"}
-#model = lgb.train(params, df_lgb)
+df_lgb = lgb.Dataset(X_train, label=y_train)
+params = {"objective": "mae"}
+model = lgb.train(params, df_lgb)
 
-#pred["cnt"] = model.predict(X_test)
+pred["cnt"] = model.predict(X_test)
 
 
 #score(pred.cnt)
