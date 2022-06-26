@@ -69,7 +69,7 @@ pred["cnt"] = train.cnt.mean() # Rent number is the mean value
 
 #df = pd.concat([train, test], sort=False)
 
-df.datetime = pd.to_datetime(df.datetime)
+#df.datetime = pd.to_datetime(df.datetime)
 
 df["hour"] = df.datetime.dt.hour
 df["dow"] = df.datetime.dt.weekday # weekday_name
