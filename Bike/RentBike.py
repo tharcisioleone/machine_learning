@@ -90,7 +90,7 @@ joined = X_test.join(mean_by_weekend_hour, on=["weekend", "hour"], how="left")
 joined[joined.weekend == 0].head()
 
 
-pred["cnt"] = joined.cnt
+#pred["cnt"] = joined.cnt
 
 #score(pred.cnt)
 
