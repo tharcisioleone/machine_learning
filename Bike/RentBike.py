@@ -54,7 +54,7 @@ print(MAE(mae_example.real, mae_example.prediction)) # MAE = 10
 
 
 
-############### (WORKING IN PROGRESS) ################################
+############### (WORK IN PROGRESS) ################################
 # 4. Putting MAE in relation to a basis prediction
 
 #pred["cnt"] = 0 # Rent number is assumed as 0 as example only.
@@ -72,8 +72,8 @@ pred["cnt"] = train.cnt.mean() # Rent number is the mean value
 #df.datetime = pd.to_datetime(df.datetime)
 
 #df["hour"] = df.datetime.dt.hour
-df["dow"] = df.datetime.dt.weekday # weekday_name
-df["weekend"] = (df.dow >= 5).astype(int)
+#df["dow"] = df.datetime.dt.weekday # weekday_name
+#df["weekend"] = (df.dow >= 5).astype(int)
 
 df.head(10)
 
