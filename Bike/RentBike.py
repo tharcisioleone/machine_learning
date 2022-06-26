@@ -52,9 +52,12 @@ print(MAE(mae_example.real, mae_example.prediction)) # MAE = 10
 
 
 
+
+
+############### (WORKING IN PROGRESS) ################################
 # 4. Putting MAE in relation to a basis prediction
 
-pred["cnt"] = 0 # Rent number is assumed as 0 as example only.
+#pred["cnt"] = 0 # Rent number is assumed as 0 as example only.
 #print(score(pred.cnt)) # This is the maximal MAE that you can have.
 
 
