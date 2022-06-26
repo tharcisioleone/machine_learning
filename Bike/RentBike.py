@@ -67,7 +67,7 @@ pred["cnt"] = train.cnt.mean() # Rent number is the mean value
 
 #score(pred.cnt)
 
-df = pd.concat([train, test], sort=False)
+#df = pd.concat([train, test], sort=False)
 
 df.datetime = pd.to_datetime(df.datetime)
 
