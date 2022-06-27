@@ -1,6 +1,6 @@
 
 # Author: Tharcisio Leone #
-# Dataset: Rent a Bike #
+# Dataset: Bike Sharing Demand #
 
 ## Maschine Learning using Linear Regression
 # 0. Importing Libraries
@@ -47,8 +47,8 @@ print(pred.head(5))
 def MAE(actual, pred):
     return metrics.mean_absolute_error(actual, pred)
 
-def score(pred):
-    solution = pd.read_csv("../input/solution.csv").cnt
+def score(pred): #  Calling score the method computes the accuracy score by default.
+    solution = pd.read_csv("C:/Users/tharc/Documents/GitHub/machine_learning/Bike/solution.csv").cnt
     return MAE(solution, pred)
 
 mae_example = pd.DataFrame({"real": [10,10,25], "prediction": [5,15,5]})
