@@ -65,7 +65,7 @@ print(MAE(mae_example.real, mae_example.prediction)) # MAE = 10
 
 pred["cnt"] = 0 # Rent number is assumed as 0 as example only.
 score(pred.cnt)
-#print(score(pred.cnt)) # This is the maximal MAE that you can have.
+print(score(pred.cnt)) # 185.92 is the maximal MAE that you can have. In case of all predictions = 0.
 
 
 
