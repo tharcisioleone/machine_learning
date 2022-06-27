@@ -19,7 +19,6 @@ from sklearn import metrics
 plt.style.use('ggplot')
 
 
-
 # Instead of matplotlib inline: Because the notebook needs to be convertable to a Python script where IPython magic does not work.
 import matplotlib.pyplot as pl
 try:
