@@ -74,7 +74,7 @@ print(score(pred.cnt)) # 185.92 is the maximal MAE that you can have. In case of
 
 
 
-# Including additional variables necessary for the prediction
+# 5. Including additional variables necessary for the prediction
 df = pd.concat([train, test], sort=False)
 df.datetime = pd.to_datetime(df.datetime)
 
@@ -84,7 +84,12 @@ df["weekend"] = (df.dow >= 5).astype(int)
 
 print(df.head(10))
 
+
+
+# 6. Displaing graphically the bike demand over the day
 #df[df.cnt.notnull()].groupby(["hour", "weekend"]).cnt.mean().unstack().plot(figsize=(20, 9))
+#plt.show()
+
 
 #train = df[df.cnt.notnull()]
 #y_train = train.cnt
