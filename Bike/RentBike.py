@@ -72,17 +72,17 @@ print(score(pred.cnt)) # 185.92 is the maximal MAE that you can have. In case of
 #pred["cnt"] = train.cnt.mean() # Rent number is the mean value
 #score(pred.cnt)
 
-#score(pred.cnt)
 
-#df = pd.concat([train, test], sort=False)
 
-#df.datetime = pd.to_datetime(df.datetime)
+# Including additional variables necessary for the prediction
+df = pd.concat([train, test], sort=False)
+df.datetime = pd.to_datetime(df.datetime)
 
-#df["hour"] = df.datetime.dt.hour
-#df["dow"] = df.datetime.dt.weekday # weekday_name
-#df["weekend"] = (df.dow >= 5).astype(int)
+df["hour"] = df.datetime.dt.hour
+df["dow"] = df.datetime.dt.weekday # weekday_name
+df["weekend"] = (df.dow >= 5).astype(int)
 
-#df.head(10)
+print(df.head(10))
 
 #df[df.cnt.notnull()].groupby(["hour", "weekend"]).cnt.mean().unstack().plot(figsize=(20, 9))
 
