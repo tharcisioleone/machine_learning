@@ -18,7 +18,14 @@ from sklearn import metrics
 
 plt.style.use('ggplot')
 
-#get_ipython().magic('matplotlib inline')
+
+
+# Instead of matplotlib inline: Because the notebook needs to be convertable to a Python script where IPython magic does not work.
+import matplotlib.pyplot as pl
+try:
+    get_ipython().magic("matplotlib inline")
+except:
+    pl.ion()
 
 
 # 1. Reading the data set from Kaggle data.
@@ -58,12 +65,13 @@ print(MAE(mae_example.real, mae_example.prediction)) # MAE = 10
 # 4. Putting MAE in relation to a basis prediction
 
 pred["cnt"] = 0 # Rent number is assumed as 0 as example only.
-print(score(pred.cnt)) # This is the maximal MAE that you can have.
-
-
-
-pred["cnt"] = train.cnt.mean() # Rent number is the mean value
 score(pred.cnt)
+#print(score(pred.cnt)) # This is the maximal MAE that you can have.
+
+
+
+#pred["cnt"] = train.cnt.mean() # Rent number is the mean value
+#score(pred.cnt)
 
 #score(pred.cnt)
 
@@ -79,26 +87,26 @@ score(pred.cnt)
 
 #df[df.cnt.notnull()].groupby(["hour", "weekend"]).cnt.mean().unstack().plot(figsize=(20, 9))
 
-train = df[df.cnt.notnull()]
-y_train = train.cnt
-X_train = train.drop(["datetime", "cnt"], axis=1)
-X_test = df[df.cnt.isnull()].drop(["datetime", "cnt"], axis=1)
+#train = df[df.cnt.notnull()]
+#y_train = train.cnt
+#X_train = train.drop(["datetime", "cnt"], axis=1)
+#X_test = df[df.cnt.isnull()].drop(["datetime", "cnt"], axis=1)
 
 
-mean_by_weekend_hour = train.groupby(["weekend", "hour"]).cnt.mean()
-joined = X_test.join(mean_by_weekend_hour, on=["weekend", "hour"], how="left")
-joined[joined.weekend == 0].head()
+#mean_by_weekend_hour = train.groupby(["weekend", "hour"]).cnt.mean()
+#joined = X_test.join(mean_by_weekend_hour, on=["weekend", "hour"], how="left")
+#joined[joined.weekend == 0].head()
 
 
 #pred["cnt"] = joined.cnt
 
 #score(pred.cnt)
 
-df_lgb = lgb.Dataset(X_train, label=y_train)
-params = {"objective": "mae"}
-model = lgb.train(params, df_lgb)
+#df_lgb = lgb.Dataset(X_train, label=y_train)
+#params = {"objective": "mae"}
+#model = lgb.train(params, df_lgb)
 
-pred["cnt"] = model.predict(X_test)
+#pred["cnt"] = model.predict(X_test)
 
 
 #score(pred.cnt)
