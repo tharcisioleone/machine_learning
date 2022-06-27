@@ -63,7 +63,7 @@ print(score(pred.cnt)) # This is the maximal MAE that you can have.
 
 
 pred["cnt"] = train.cnt.mean() # Rent number is the mean value
-#score(pred.cnt)
+score(pred.cnt)
 
 #score(pred.cnt)
 
