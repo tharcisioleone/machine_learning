@@ -4,7 +4,7 @@
 ## Maschine Learning using Decision Trees
 # 0. Importing Libraries
 # 1. Transforming string in dummy
-# 2. Creating the database
+# 2. Creating the data
 # 3. Imputing Decision Tree
 # 4. Including the questions to be imputed
 # 5. Showing results of the Decision Tree
@@ -18,13 +18,13 @@ yellow = 0
 apple = 1
 banana = 0
 
-# 2. Creating the database
-orchard = [[150, red], [130, red], [180, yellow], [160, yellow]]
-output = [apple, apple, banana, banana]
+# 2. Creating the data
+train = [[150, red], [130, red], [180, yellow], [160, yellow]]
+test = [apple, apple, banana, banana]
 
 # 3. Imputing Decision Tree
 clf = tree.DecisionTreeClassifier()
-clf = clf.fit(orchard, output)
+clf = clf.fit(train, test)
 
 # 4. Including the questions to be imputed
 weight = input('Please type the weight of the fruit: ')
