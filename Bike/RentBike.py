@@ -110,7 +110,7 @@ pred["cnt"] = joined.cnt
 print(score(pred.cnt)) # MAE decreases to 77.16.
 
 
-# 8. Including Machine Learning ##
+# 8. Including Machine Learning 
 df_lgb = lgb.Dataset(X_train, label=y_train)
 params = {"objective": "mae"} # Imputing algorithms
 model = lgb.train(params, df_lgb) # Imputing Decision trees
