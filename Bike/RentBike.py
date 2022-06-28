@@ -91,14 +91,14 @@ print(df.head(10))
 
 
 # 6. Displaing graphically the bike demand over the day
-df[df.cnt.notnull()].groupby(["hour", "weekend"]).cnt.mean().unstack().plot(figsize=(20, 9))
-plt.show()
+#df[df.cnt.notnull()].groupby(["hour", "weekend"]).cnt.mean().unstack().plot(figsize=(20, 9))
+#plt.pyplot.show()
 
 
-train = df[df.cnt.notnull()]
-y_train = train.cnt
-X_train = train.drop(["datetime", "cnt"], axis=1)
-X_test = df[df.cnt.isnull()].drop(["datetime", "cnt"], axis=1)
+#train = df[df.cnt.notnull()]
+#y_train = train.cnt
+#X_train = train.drop(["datetime", "cnt"], axis=1)
+#X_test = df[df.cnt.isnull()].drop(["datetime", "cnt"], axis=1)
 
 
 #mean_by_weekend_hour = train.groupby(["weekend", "hour"]).cnt.mean()
