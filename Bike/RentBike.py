@@ -78,7 +78,7 @@ print(score(pred.cnt))
 
 
 
-# 5. Including additional variables to improve the prediction
+# 5. Creating additional variables to improve the prediction
 df = pd.concat([train, test], sort=False)
 df.datetime = pd.to_datetime(df.datetime)
 
@@ -95,21 +95,19 @@ df[df.cnt.notnull()].groupby(["hour", "weekend"]).cnt.mean().unstack().plot(figs
 plt.pyplot.show()
 
 
-# 7. Creating a prediction
+# 7. Including the additional variables into the prediction to improve the MAE.
 train = df[df.cnt.notnull()]
 y_train = train.cnt
 X_train = train.drop(["datetime", "cnt"], axis=1)
 X_test = df[df.cnt.isnull()].drop(["datetime", "cnt"], axis=1)
 
-
 mean_by_weekend_hour = train.groupby(["weekend", "hour"]).cnt.mean()
 joined = X_test.join(mean_by_weekend_hour, on=["weekend", "hour"], how="left")
-joined[joined.weekend == 0].head()
+print(joined[joined.weekend == 0].head())
 
 
-#pred["cnt"] = joined.cnt
-
-#score(pred.cnt)
+pred["cnt"] = joined.cnt
+print(score(pred.cnt)) # MAE decreases to 77.16
 
 #df_lgb = lgb.Dataset(X_train, label=y_train)
 #params = {"objective": "mae"}
