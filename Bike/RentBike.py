@@ -78,7 +78,7 @@ print(score(pred.cnt)) # 185.92 is the maximal MAE that you can have. In case of
 
 
 
-# 5. Including additional variables necessary for the prediction
+# 5. Including additional variables to improve the prediction
 df = pd.concat([train, test], sort=False)
 df.datetime = pd.to_datetime(df.datetime)
 
