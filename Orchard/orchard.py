@@ -27,5 +27,10 @@ clf = clf.fit(orchard, output)
 weight = input('Please typ the weight of the fruit: ')
 color = input('Please typ the color of the fruit: ')
 
-# 5.
-# AnswerUser
+# 5. Showing results of the Decision Tree
+answeruser = clf.predict([[weight, color]])
+
+if answeruser == 1:
+    print('This is a Apple')
+else:
+    print('This is a Banana')
