@@ -19,4 +19,13 @@ banana = 0
 orchard = [[150, red], [130, red], [180, yellow], [160, yellow]]
 output = [apple, apple, banana, banana]
 
-# 3. Impting Decision Tree
+# 3. Imputing Decision Tree
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(orchard, output)
+
+# 4. Including the questions to be imputed.
+weight = input('Please typ the weight of the fruit: ')
+color = input('Please typ the color of the fruit: ')
+
+# 5.
+# AnswerUser
