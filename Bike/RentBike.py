@@ -73,8 +73,8 @@ print(score(pred.cnt)) # 185.92 is the maximal MAE that you can have. In case of
 
 
 
-#pred["cnt"] = train.cnt.mean() # Rent number is the mean value
-#score(pred.cnt)
+pred["cnt"] = train.cnt.mean() # Rent number is the mean value
+print(score(pred.cnt))
 
 
 
@@ -91,19 +91,20 @@ print(df.head(10))
 
 
 # 6. Displaing graphically the bike demand over the day
-#df[df.cnt.notnull()].groupby(["hour", "weekend"]).cnt.mean().unstack().plot(figsize=(20, 9))
-#plt.pyplot.show()
+df[df.cnt.notnull()].groupby(["hour", "weekend"]).cnt.mean().unstack().plot(figsize=(20, 9))
+plt.pyplot.show()
 
 
-#train = df[df.cnt.notnull()]
-#y_train = train.cnt
-#X_train = train.drop(["datetime", "cnt"], axis=1)
-#X_test = df[df.cnt.isnull()].drop(["datetime", "cnt"], axis=1)
+# 7. Creating a prediction
+train = df[df.cnt.notnull()]
+y_train = train.cnt
+X_train = train.drop(["datetime", "cnt"], axis=1)
+X_test = df[df.cnt.isnull()].drop(["datetime", "cnt"], axis=1)
 
 
-#mean_by_weekend_hour = train.groupby(["weekend", "hour"]).cnt.mean()
-#joined = X_test.join(mean_by_weekend_hour, on=["weekend", "hour"], how="left")
-#joined[joined.weekend == 0].head()
+mean_by_weekend_hour = train.groupby(["weekend", "hour"]).cnt.mean()
+joined = X_test.join(mean_by_weekend_hour, on=["weekend", "hour"], how="left")
+joined[joined.weekend == 0].head()
 
 
 #pred["cnt"] = joined.cnt
