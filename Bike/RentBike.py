@@ -113,10 +113,10 @@ print(score(pred.cnt)) # MAE decreases to 77.16.
 # 8. Including Machine Learning
 df_lgb = lgb.Dataset(X_train, label=y_train)
 params = {"objective": "mae"} # Imputing algorithms
-model = lgb.train(params, df_lgb) # Decision trees
+model = lgb.train(params, df_lgb) # Testing with Decision trees
 
 pred["cnt"] = model.predict(X_test)
-print(score(pred.cnt)) # # MAE decreases to 50.14
+print(score(pred.cnt)) # # MAE decreases to 50.14.
 
 
 
