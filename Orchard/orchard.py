@@ -27,8 +27,8 @@ clf = tree.DecisionTreeClassifier()
 clf = clf.fit(orchard, output)
 
 # 4. Including the questions to be imputed
-weight = input('Please typ the weight of the fruit: ')
-color = input('Please typ the color of the fruit (1 for red and 0 for yellow): ')
+weight = input('Please type the weight of the fruit: ')
+color = input('Please type the color of the fruit (1 for red and 0 for yellow): ')
 
 # 5. Showing results of Decision Trees
 answeruser = clf.predict([[weight, color]])
