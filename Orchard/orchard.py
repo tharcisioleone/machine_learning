@@ -3,13 +3,16 @@
 
 ## Maschine Learning using Decision Trees
 # 0. Importing Libraries
-# 1. Reading the data set from Kaggle data.
-# 2. Showing the first five rows of the data set.
+# 1. Transforming string in dummy
+# 2. Creating the database
+# 3. Imputing Decision Tree
+# 4. Including the questions to be imputed
+# 5. Showing results of the Decision Tree
 
 # 0. Importing Libraries
 from sklearn import tree
 
-# 1. Transforming string in dummy
+# 1. Transforming string in dummy (sklearn does not work with string)
 red = 1
 yellow = 0
 apple = 1
@@ -23,11 +26,11 @@ output = [apple, apple, banana, banana]
 clf = tree.DecisionTreeClassifier()
 clf = clf.fit(orchard, output)
 
-# 4. Including the questions to be imputed.
+# 4. Including the questions to be imputed
 weight = input('Please typ the weight of the fruit: ')
-color = input('Please typ the color of the fruit: ')
+color = input('Please typ the color of the fruit (1 for red and 0 for yellow): ')
 
-# 5. Showing results of the Decision Tree
+# 5. Showing results of Decision Trees
 answeruser = clf.predict([[weight, color]])
 
 if answeruser == 1:
