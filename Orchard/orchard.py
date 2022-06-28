@@ -19,12 +19,12 @@ apple = 1
 banana = 0
 
 # 2. Creating the data
-train = [[150, red], [130, red], [180, yellow], [160, yellow]]
-test = [apple, apple, banana, banana]
+train_x = [[150, red], [130, red], [180, yellow], [160, yellow]]
+train_y = [apple, apple, banana, banana]
 
 # 3. Imputing Decision Tree
 clf = tree.DecisionTreeClassifier()
-clf = clf.fit(train, test)
+clf = clf.fit(train_x, train_y)
 
 # 4. Including the questions to be imputed
 weight = input('Please type the weight of the fruit: ')
