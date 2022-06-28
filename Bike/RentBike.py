@@ -107,16 +107,16 @@ print(joined[joined.weekend == 0].head())
 
 
 pred["cnt"] = joined.cnt
-print(score(pred.cnt)) # MAE decreases to 77.16
-
-#df_lgb = lgb.Dataset(X_train, label=y_train)
-#params = {"objective": "mae"}
-#model = lgb.train(params, df_lgb)
-
-#pred["cnt"] = model.predict(X_test)
+print(score(pred.cnt)) # MAE decreases to 77.16.
 
 
-#score(pred.cnt)
+# 8. Including Machine Learning
+df_lgb = lgb.Dataset(X_train, label=y_train)
+params = {"objective": "mae"} # Imputing algorithms
+model = lgb.train(params, df_lgb) # Decision trees
+
+pred["cnt"] = model.predict(X_test)
+print(score(pred.cnt)) # # MAE decreases to 50.14
 
 
 
