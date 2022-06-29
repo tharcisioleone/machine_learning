@@ -12,7 +12,7 @@
 # 0. Importing Libraries
 from sklearn import tree
 
-# 1. Transforming string in dummy (sklearn does not work with string)
+# 1. Transforming string in dummy 
 red = 1
 yellow = 0
 apple = 1
