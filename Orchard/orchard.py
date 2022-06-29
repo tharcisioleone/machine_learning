@@ -36,4 +36,4 @@ answeruser = clf.predict([[weight, color]])
 if answeruser == 1:
     print('This is a Apple !!')
 else:
-    print('This is a Banana ')
+    print('This is a Banana !!')
