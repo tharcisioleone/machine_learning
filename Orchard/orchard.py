@@ -34,6 +34,6 @@ color = input('Please type the color of the fruit (1 for red and 0 for yellow): 
 answeruser = clf.predict([[weight, color]])
 
 if answeruser == 1:
-    print('This is a Apple')
+    print('This is a Apple !!')
 else:
-    print('This is a Banana')
+    print('This is a Banana ')
