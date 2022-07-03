@@ -89,7 +89,6 @@ df["weekend"] = (df.dow >= 5).astype(int)
 print(df.head(10))
 
 
-
 # 6. Displaing graphically the bike demand over the day
 df[df.cnt.notnull()].groupby(["hour", "weekend"]).cnt.mean().unstack().plot(figsize=(20, 9))
 plt.pyplot.show()
