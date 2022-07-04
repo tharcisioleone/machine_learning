@@ -17,8 +17,8 @@ import email.message
 
 def send_email():
     body_email = """
-    <p>Parágrafo1</p>
-    <p>Parágrafo2</p>
+    <p>A test mail sent by Python. It has no attachment.</p>
+    <p>Please delete it.</p>
     """
 
     msg = email.message.Message()
