@@ -1,7 +1,7 @@
 # Author: Tharcisio Leone #
 # Dataset: Send a Email #
 
-## Send mail from your Gmail account using Python
+## Send mail from my Gmail account using Python
 # 0. Importing Libraries
 # 1. Adding body of email
 # 2. Adding title, and addresses of sender and receiver
