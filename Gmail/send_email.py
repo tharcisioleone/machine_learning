@@ -9,7 +9,6 @@
 # 4. Displaying message confirming the email has been sent.
 
 
-
 # 0. Importing Libraries
 import smtplib
 import email.message
