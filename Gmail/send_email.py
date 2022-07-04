@@ -1,12 +1,12 @@
 # Author: Tharcisio Leone #
 # Dataset: Send a Email #
 
-## Maschine Learning using Linear Regression
+## Send mail from your Gmail account using Python
 # 0. Importing Libraries
-# 1. Reading the data set from Kaggle data.
-# 2. Showing the first five rows of the data sets.
-# 3. Calculating the Mean Absolute Error
-# 4. Putting MAE in relation to a basis prediction
+# 1. Create MIME
+# 2. Add sender, receiver address into the MIME
+# 3. Add the mail title into the MIME
+# 4. Attach the body into the MIME
 # 5. Including additional variables necessary for the prediction
 # 6. Displaing graphically the bike demand over the day
 
