@@ -6,7 +6,7 @@
 # 1. Adding body of email
 # 2. Adding subject, and addresses of sender and receiver.
 # 3. Including Login Credentials for sending the mail
-
+# 4. Displaying message confirming the email has been sent.
 
 
 
@@ -26,18 +26,18 @@ def send_email():
     msg['Subject'] = "Python Script"
     msg['From'] = 'tharcisioleone@gmail.com'
     msg['To'] = 'tharcisio.leone@giga-hamburg.de'
-    password = 'vevyobxeiugitayi' #
+    password = 'vevyobxeiugitayi' # Fake Password
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(body_email )
-
     s = smtplib.SMTP('smtp.gmail.com: 587')
     s.starttls()
 
-    # 3. Including Login Credentials for sending the mail
+# 3. Including Login Credentials for sending the mail
     s.login(msg['From'], password)
     s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
-    print('Email has been sent.')
 
+# 4. Displaying message confirming the email has been sent.
+    print('Email has been sent.')
 
 
 send_email()
