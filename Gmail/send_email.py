@@ -3,8 +3,8 @@
 
 ## Send mail from your Gmail account using Python
 # 0. Importing Libraries
-# 1. Create MIME
-# 2. Add sender, receiver address into the MIME
+# 1. Adding body of email
+# 2. Add sender, receiver address
 # 3. Add the mail title into the MIME
 # 4. Attach the body into the MIME
 # 5. Including additional variables necessary for the prediction
