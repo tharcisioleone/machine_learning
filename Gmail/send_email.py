@@ -16,7 +16,7 @@ import smtplib
 import email.message
 
 def send_email():
-    corpo_email = """
+    body_email = """
     <p>Parágrafo1</p>
     <p>Parágrafo2</p>
     """
@@ -27,7 +27,7 @@ def send_email():
     msg['To'] = 'tharcisio.leone@giga-hamburg.de'
     password = 'vevyobxeiugitayi' #
     msg.add_header('Content-Type', 'text/html')
-    msg.set_payload(corpo_email )
+    msg.set_payload(body_email )
 
     s = smtplib.SMTP('smtp.gmail.com: 587')
     s.starttls()
