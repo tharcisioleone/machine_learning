@@ -15,17 +15,17 @@
 import smtplib
 import email.message
 
-def enviar_email():  
+def send_email():
     corpo_email = """
     <p>Parágrafo1</p>
     <p>Parágrafo2</p>
     """
 
     msg = email.message.Message()
-    msg['Subject'] = "Assunto"
+    msg['Subject'] = "Python Script"
     msg['From'] = 'tharcisioleone@gmail.com'
-    msg['To'] = ''
-    password = 'vevyobxeiugitayi'
+    msg['To'] = 'tharcisio.leone@giga-hamburg.de'
+    password = 'vevyobxeiugitayi' #
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email )
 
@@ -34,10 +34,10 @@ def enviar_email():
     # Login Credentials for sending the mail
     s.login(msg['From'], password)
     s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
-    print('Email enviado')
+    print('Email has been sent.')
 
 
-# In[ ]:
+
 
 
 enviar_email()
