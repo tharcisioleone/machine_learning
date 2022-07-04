@@ -4,23 +4,24 @@
 ## Send mail from your Gmail account using Python
 # 0. Importing Libraries
 # 1. Adding body of email
-# 2. Add sender, receiver address
-# 3. Add the mail title into the MIME
-# 4. Attach the body into the MIME
-# 5. Including additional variables necessary for the prediction
-# 6. Displaing graphically the bike demand over the day
+# 2. Adding subject, and addresses of sender and receiver.
+# 3. Including Login Credentials for sending the mail
+
+
 
 
 # 0. Importing Libraries
 import smtplib
 import email.message
 
+# 1. Adding body of email
 def send_email():
     body_email = """
     <p>A test mail sent by Python. It has no attachment.</p>
     <p>Please delete it.</p>
     """
 
+# 2. Adding title, and addresses of sender and receiver.
     msg = email.message.Message()
     msg['Subject'] = "Python Script"
     msg['From'] = 'tharcisioleone@gmail.com'
@@ -31,12 +32,11 @@ def send_email():
 
     s = smtplib.SMTP('smtp.gmail.com: 587')
     s.starttls()
-    # Login Credentials for sending the mail
+
+    # 3. Including Login Credentials for sending the mail
     s.login(msg['From'], password)
     s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
     print('Email has been sent.')
-
-
 
 
 
