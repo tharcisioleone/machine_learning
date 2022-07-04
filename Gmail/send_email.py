@@ -26,7 +26,7 @@ def send_email():
     msg['Subject'] = "Python Script"
     msg['From'] = 'tharcisioleone@gmail.com'
     msg['To'] = 'tharcisio.leone@giga-hamburg.de'
-    password = 'vevyobxeiugitayi' # Fake Password
+    password = 'fakepassword' # Fake Password
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(body_email )
     s = smtplib.SMTP('smtp.gmail.com: 587')
