@@ -23,3 +23,4 @@ print(table_sales)
 
 # 3. Calculate the revenue per store
 revenue = table_sales[['Store ID', 'Total']].groupby('Store ID').sum()
+print(revenue)
