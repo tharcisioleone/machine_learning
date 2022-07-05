@@ -9,3 +9,9 @@
 # 4. Calculate the average ticket per product and store
 # 5. Send an email with the sales report
 
+
+# 0. Importing Libraries
+import pandas as pd
+
+# 1. Reading the data set
+table_sales = pd.read.excel('Sales.slsx')
