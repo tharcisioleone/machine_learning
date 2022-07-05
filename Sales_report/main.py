@@ -14,4 +14,5 @@
 import pandas as pd
 
 # 1. Reading the data set
-table_sales = pd.read.excel('Sales.slsx')
+table_sales = pd.read_excel('Sales.xlsx')
+
