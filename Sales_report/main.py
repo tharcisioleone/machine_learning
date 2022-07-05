@@ -16,7 +16,8 @@ import pandas as pd
 
 # 1. Reading the data set
 table_sales = pd.read_excel('Sales.xlsx')
-print(table_sales)
-
 
 # 2. Visualise the data set
+pd.reset_option('display.max_columns', None) # Showing all the columns
+print(table_sales)
+
