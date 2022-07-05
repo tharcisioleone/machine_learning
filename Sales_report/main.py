@@ -1,16 +1,12 @@
-# This is a sample Python script.
+# Author: Tharcisio Leone #
+# Dataset: Sales Report #
 
-# Press Umschalt+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+## Maschine Learning using Linear Regression
+# 0. Importing Libraries
+# 1. Reading the data set
+# 2. Showing the first five rows of the data sets.
+# 3. Calculating the Mean Absolute Error
+# 4. Putting MAE in relation to a basis prediction
+# 5. Including additional variables necessary for the prediction
+# 6. Displaing graphically the bike demand over the day
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Strg+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
