@@ -1,12 +1,11 @@
 # Author: Tharcisio Leone #
 # Dataset: Sales Report #
 
-## Maschine Learning using Linear Regression
+## Create a sales report and send it per e-mail
 # 0. Importing Libraries
 # 1. Reading the data set
-# 2. Showing the first five rows of the data sets.
-# 3. Calculating the Mean Absolute Error
-# 4. Putting MAE in relation to a basis prediction
-# 5. Including additional variables necessary for the prediction
-# 6. Displaing graphically the bike demand over the day
+# 2. Calculate the revenue per store
+# 3. Calculate the number of products sold per store
+# 4. Calculate the average ticket per product and store
+# 5. Send an email with the sales report
 
