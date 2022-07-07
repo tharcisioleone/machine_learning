@@ -26,3 +26,4 @@ revenue = table_sales[['Store ID', 'Total']].groupby('Store ID').sum() # GroupBy
 print(revenue)
 
 # 4. Calculate the number of products sold per store
+quantidade = tabela_vendas[['Store ID', 'Quanti']].groupby('ID Loja').sum()
