@@ -42,13 +42,18 @@ print(average_ticket)
 import win32com.client as win32
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
-mail.To = 'To address'
-mail.Subject = 'Message subject'
-mail.Body = 'Message body'
-mail.HTMLBody = '<h2>HTML Message body</h2>' #this field is optional
+mail.To = 'tharcisioleone@gmail.com'
+mail.Subject = 'Sales Report'
+mail.Body = '''
+Dear colleagues,
+please find attached the most recent sales report divided by stores.
 
-# To attach a file to the email (optional):
-attachment  = "Path to the attachment"
-mail.Attachments.Add(attachment)
+Please let me know if you need any further information.
+Best regards,
+Tharcisio Leone
+'''
+
+
+
 
 mail.Send()
