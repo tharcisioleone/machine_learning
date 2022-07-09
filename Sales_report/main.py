@@ -28,7 +28,7 @@ print(revenue)
 print('-' * 50) # For a better visualisation of the tables
 
 # 4. Calculate the number of products sold per store
-quantity = table_sales[['Store ID', 'Quantity']].groupby('Store ID').sum()
+quantity = (table_sales[['Store ID', 'Quantity']].groupby('Store ID').sum()).to.frame()
 print(quantity)
 
 # 5. Calculate the average ticket per product and store
