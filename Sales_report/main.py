@@ -44,18 +44,18 @@ outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
 mail.To = 'tharcisioleone@gmail.com'
 mail.Subject = 'Sales Report'
-mail.Body = '''
+mail.Body = f'''
 <p>Dear colleagues,</p>
 <p>please find attached the most recent sales report divided by stores.</p>
 
 <p>Table 1: Revenue per store</p>
-{}
+{revenue}
 
 <p>Table 2: Number of products sold per store</p>
-{}
+{quantity}
 
 <p>Table 3: Average ticket per store</p>
-{}
+{average_ticket}
 
 <p>Please let me know if you need any further information.</p>
 <p>Best regards,</p>
