@@ -7,7 +7,7 @@
 # 2. Visualise the data set
 # 3. Calculate the revenue per store
 # 4. Calculate the number of products sold per store
-# 5. Calculate the average ticket per product and store
+# 5. Calculate the average ticket per store
 # 6. Send an email with the sales report
 
 
@@ -32,7 +32,7 @@ quantity = table_sales[['Store ID', 'Quantity']].groupby('Store ID').sum()
 print(quantity)
 print('-' * 50) # For a better visualisation of the tables
 
-# 5. Calculate the average ticket per product and store
+# 5. Calculate the average ticket per store
 # average ticket = revenue / quantity
 average_ticket = (revenue['Total'] / quantity['Quantity']).to_frame()
 print(average_ticket)
@@ -47,6 +47,15 @@ mail.Subject = 'Sales Report'
 mail.Body = '''
 Dear colleagues,
 please find attached the most recent sales report divided by stores.
+
+Table 1: Revenue per store
+{}
+
+Table 2: Number of products sold per store
+{}
+
+Table 3: Average ticket per store
+{}
 
 Please let me know if you need any further information.
 Best regards,
