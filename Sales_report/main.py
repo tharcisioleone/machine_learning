@@ -45,21 +45,21 @@ mail = outlook.CreateItem(0)
 mail.To = 'tharcisioleone@gmail.com'
 mail.Subject = 'Sales Report'
 mail.Body = '''
-Dear colleagues,
-please find attached the most recent sales report divided by stores.
+<p>Dear colleagues,</p>
+<p>please find attached the most recent sales report divided by stores.</p>
 
-Table 1: Revenue per store
+<p>Table 1: Revenue per store</p>
 {}
 
-Table 2: Number of products sold per store
+<p>Table 2: Number of products sold per store</p>
 {}
 
-Table 3: Average ticket per store
+<p>Table 3: Average ticket per store</p>
 {}
 
-Please let me know if you need any further information.
-Best regards,
-Tharcisio Leone
+<p>Please let me know if you need any further information.</p>
+<p>Best regards,</p>
+<p>Tharcisio Leone</p>
 '''
 
 mail.Send()
