@@ -35,6 +35,7 @@ print('-' * 50) # For a better visualisation of the tables
 # 5. Calculate the average ticket per store
 # average ticket = revenue / quantity
 average_ticket = (revenue['Total'] / quantity['Quantity']).to_frame()
+average_ticket = average_ticket.rename(columns={0:'Average Ticket'})
 print(average_ticket)
 
 # 6. Send an email with the sales report
