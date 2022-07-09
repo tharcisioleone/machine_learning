@@ -35,3 +35,5 @@ print(quantity)
 # average ticket = revenue / quantity
 average_ticket = revenue['Total'] / quantity['Quantity']
 print(average_ticket)
+
+# 6. Send an email with the sales report
