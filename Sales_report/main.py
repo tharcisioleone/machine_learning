@@ -34,3 +34,4 @@ print(quantity)
 # 5. Calculate the average ticket per product and store
 # average ticket = revenue / quantity
 average_ticket = revenue['Total'] / quantity['Quantity']
+print(average_ticket)
