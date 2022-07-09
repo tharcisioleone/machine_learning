@@ -53,7 +53,5 @@ Best regards,
 Tharcisio Leone
 '''
 
-
-
-
 mail.Send()
+print(Email has been sent.)
