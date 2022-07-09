@@ -49,13 +49,13 @@ mail.Body = f'''
 <p>please find attached the most recent sales report divided by stores.</p>
 
 <p>Table 1: Revenue per store</p>
-{revenue}
+{revenue.to_html()}
 
 <p>Table 2: Number of products sold per store</p>
-{quantity}
+{quantity.to_html()}
 
 <p>Table 3: Average ticket per store</p>
-{average_ticket}
+{average_ticket.to_html()}
 
 <p>Please let me know if you need any further information.</p>
 <p>Best regards,</p>
