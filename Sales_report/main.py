@@ -38,7 +38,7 @@ average_ticket = (revenue['Total'] / quantity['Quantity']).to_frame()
 print(average_ticket)
 
 # 6. Send an email with the sales report
-# Import code from Stackoverflow: https://stackoverflow.com/questions/6332577/send-outlook-email-via-python
+# Copy and paste code from Stackoverflow: https://stackoverflow.com/questions/6332577/send-outlook-email-via-python
 import win32com.client as win32
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
