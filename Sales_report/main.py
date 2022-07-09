@@ -56,7 +56,7 @@ mail.Body = f'''
 {quantity.to_html()}
 
 <p>Table 3: Average ticket per store</p>
-{average_ticket.to_html()}
+{average_ticket.to_html(formatter={'Average Ticket': 'EUR{:,.2f}'.format})}
 
 <p>Please let me know if you need any further information.</p>
 <p>Best regards,</p>
