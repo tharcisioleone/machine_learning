@@ -50,7 +50,7 @@ mail.Body = f'''
 <p>please find attached the most recent sales report divided by stores.</p>
 
 <p>Table 1: Revenue per store</p>
-{revenue.to_html()}
+{revenue.to_html(formatter={'Total': 'EUR{:,.2f}'.format})}
 
 <p>Table 2: Number of products sold per store</p>
 {quantity.to_html()}
