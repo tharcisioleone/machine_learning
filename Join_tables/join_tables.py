@@ -28,5 +28,5 @@ print(table_pytdata)
 print('-' * 70)
 
 # 2. Merging both tables
-table_product = pd.merge(table_python, table_python)
+table_product = pd.merge(table_python, table_python, on='CustomerID')
 print(table_product)
