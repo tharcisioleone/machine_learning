@@ -31,8 +31,8 @@ print('x' * 70)
 table_product = pd.merge(table_python, table_datascience, on='CustomerID') # Inner merge: Only customers that bought both courses.
 print(table_product)
 print('o' * 70)
-# Alternative: Keep all values from the left table and add the right values --> left
-table_product = pd.merge(table_python, table_datascience, on='CustomerID', how='left') # Left merge:
+# Alternative: Keep all rows from both tables and include missing if necessary --> Outer, left, right
+table_product = pd.merge(table_python, table_datascience, on='CustomerID', how='outer') # Outer merge
 print(table_product)
 print('y' * 70)
 # Alternative: In case of different column names
