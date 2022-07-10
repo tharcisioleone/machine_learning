@@ -19,3 +19,5 @@ table_python = pd.read_excel('Table2.xlsx')
 table_datascience = pd.read_excel('Table1.xlsx')
 print(table_python)
 print(table_datascience)
+
+# 2. Joining both tables
