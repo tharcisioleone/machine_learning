@@ -28,5 +28,9 @@ print(table_pytdata)
 print('x' * 70)
 
 # 2. Merging both tables
-table_product = pd.merge(table_python, table_datascience, on='CustomerID') # Inner merge: Only customers that both both courses.
+table_product = pd.merge(table_python, table_datascience, on='CustomerID') # Inner merge: Only customers that bought both courses.
+print(table_product)
+print('o' * 70)
+# Alternative: In case of different column names
+table_product = pd.merge(table_python, table_datascience, left_on='CustomerID', right_on='CustomerID') # Inner merge: Only customers that bought both courses.
 print(table_product)
