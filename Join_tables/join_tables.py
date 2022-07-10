@@ -19,6 +19,7 @@ table_python = pd.read_excel('Table2.xlsx')
 table_datascience = pd.read_excel('Table1.xlsx')
 print(table_python)
 print(table_datascience)
+print('-' * 70)
 
 # 2. Joining both tables
 # See background: https://pandas.pydata.org/docs/user_guide/merging.html#:~:text=pandas%20provides%20various%20facilities%20for,join%20%2F%20merge%2Dtype%20operations.
