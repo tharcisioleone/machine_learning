@@ -21,3 +21,6 @@ print(table_python)
 print(table_datascience)
 
 # 2. Joining both tables
+# See background: https://pandas.pydata.org/docs/user_guide/merging.html#:~:text=pandas%20provides%20various%20facilities%20for,join%20%2F%20merge%2Dtype%20operations.
+table_pytdata = pd.concat([table_python, table_datascience])
+print(table_pytdata)
