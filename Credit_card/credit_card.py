@@ -10,7 +10,7 @@
 # 0. Importing Libraries
 # 1. Reading the data set from Kaggle data
 # 2. Showing most important descriptive statistics of the data
-# 3. Data preparation
+# 3. Data handling
 # 4. Creating a data analysis to identify the main reasons for the credit card cancellation
 
 # 0. Importing Libraries
@@ -19,3 +19,7 @@ import pandas as pd
 # 1. Reading the data set from Kaggle data
 table_crecard = pd.read_csv('BankChurners.csv')
 print(table_crecard)
+
+# 2. Showing most important descriptive statistics of the data
+print(table_crecard) # 5 rows and 10 columns
+print(table_crecard(5))
