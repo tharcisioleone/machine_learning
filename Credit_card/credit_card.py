@@ -17,3 +17,5 @@
 import pandas as pd
 
 # 1. Reading the data set from Kaggle data
+table_crecard = pd.read_csv('BankChurners.csv')
+print(table_crecard)
