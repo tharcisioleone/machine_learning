@@ -21,7 +21,7 @@ table_crecard = pd.read_csv('BankChurners.csv')
 print(table_crecard)
 
 # 2. Showing most important descriptive statistics of the data
-print(table_crecard) #  rows and 10 columns
+print(table_crecard) # X rows and X columns
 print(table_crecard(5))
 
 # 3. Data handling
