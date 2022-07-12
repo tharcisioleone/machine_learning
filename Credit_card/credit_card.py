@@ -10,4 +10,5 @@
 # 0. Importing Libraries
 # 1. Reading the data set from Kaggle data
 # 2. Showing most important descriptive statistics of the data
-# 3. Creating a data analysis to identify the main reasons for the credit card cancellation
+# 3. Data preparation
+# 4. Creating a data analysis to identify the main reasons for the credit card cancellation
