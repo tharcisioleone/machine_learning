@@ -23,3 +23,7 @@ print(table_crecard)
 # 2. Showing most important descriptive statistics of the data
 print(table_crecard) # 5 rows and 10 columns
 print(table_crecard(5))
+
+# 3. Data handling
+table_crecard = table_crecard.drop('CLIENTNUM', axis=1)
+tabela = tabela.drop("CLIENTNUM", axis=1)
