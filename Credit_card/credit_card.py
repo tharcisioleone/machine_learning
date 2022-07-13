@@ -28,9 +28,11 @@ print('x' * 60)
 print(table_crecard.head(5))
 print(table_crecard.info()) # Listing columns and (possible) missing
 print('o' * 60)
-print(table_crecard.describe()) # Describing descriptive statistics
+print(table_crecard.describe(), round(1)) # Describing descriptive statistics
 
 # 3. Data handling
 table_crecard2 = table_crecard.drop('CLIENTNUM', axis=1) # Dropping column
 table_crecard3 = table_crecard.dropna() # Dropping rows with missing
-#print(table_crecard3.info())
+
+
+# 4. Creating a data analysis to identify the main reasons for the credit card cancellation
