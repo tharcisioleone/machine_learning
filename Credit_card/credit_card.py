@@ -27,7 +27,10 @@ print(table_crecard.shape) # 10,127 rows and 23 columns
 print('x' * 60)
 print(table_crecard.head(5))
 print(table_crecard.info()) # Listing columns and (possible) missing
+print('o' * 60)
+print(table_crecard.describe()) # Describing descriptive statistics
 
 # 3. Data handling
-table_crecard2 = table_crecard.drop('CLIENTNUM', axis=1) # Droping column
-
+table_crecard2 = table_crecard.drop('CLIENTNUM', axis=1) # Dropping column
+table_crecard3 = table_crecard.dropna() # Dropping rows with missing
+#print(table_crecard3.info())
