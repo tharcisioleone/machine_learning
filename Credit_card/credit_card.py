@@ -22,9 +22,7 @@ print(table_crecard)
 
 # 2. Showing most important descriptive statistics of the data
 print(table_crecard) # 10,127 rows and 23 columns
-print(table_crecard(5))
-print(table_crecard.head())
 
 # 3. Data handling
-
+table_crecard2 = table_crecard.drop('CLIENTNUM', axis=1) # Droping column
 
