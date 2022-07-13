@@ -25,5 +25,5 @@ print(table_crecard) # X rows and X columns
 print(table_crecard(5))
 
 # 3. Data handling
-table_crecard = table_crecard.drop('CLIENTNUM', axis=1)
+table_crecard = 
 
