@@ -15,6 +15,7 @@
 
 # 0. Importing Libraries
 import pandas as pd
+import numpy as np
 
 # 1. Reading the data set from Kaggle data
 table_crecard = pd.read_csv('BankChurners.csv')
