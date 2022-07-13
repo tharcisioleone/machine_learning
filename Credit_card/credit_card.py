@@ -26,6 +26,7 @@ print('-' * 60)
 print(table_crecard.shape) # 10,127 rows and 23 columns
 print('x' * 60)
 print(table_crecard.head(5))
+print(table_crecard.info()) # Listing columns and (possible) missing
 
 # 3. Data handling
 table_crecard2 = table_crecard.drop('CLIENTNUM', axis=1) # Droping column
