@@ -27,7 +27,7 @@ print(table_crecard.shape) # 10,127 rows and 23 columns
 print('-' * 60)
 print(table_crecard.head(5))
 print(table_crecard.info()) # Listing columns and (possible) missing
-print('u' * 60)
+print('o' * 60)
 print(table_crecard.describe(), round(1)) # Describing descriptive statistics
 
 # 3. Data handling
