@@ -20,7 +20,7 @@ import numpy as np
 # 1. Reading the data set from Kaggle data
 table_crecard = pd.read_csv('BankChurners.csv')
 print(table_crecard)
-print('-' * 60)
+print('x' * 60)
 
 # 2. Showing most important descriptive statistics of the data
 print(table_crecard.shape) # 10,127 rows and 23 columns
