@@ -60,10 +60,26 @@ graph1 = px.histogram(table_crecard, x='Customer_Age', color='Attrition_Flag')
 graph1.show()
 
 # Using Loopings
-for columns in table_crecard:
-    graph = px.histogram(table_crecard, x=columns, color='Attrition_Flag')
-    graph.show()
+#for columns in table_crecard:
+#    graph = px.histogram(table_crecard, x=columns, color='Attrition_Flag')
+#    graph.show()
 
 # 7. Mean Conclusions
 # a) The higher the number of contacts (Contacts_Count_12_mon), the higher the chance of cancellation.
 # b) The higher the number and volume of transactions (Total_Trans_Ct), the lower the chance of cancellation.
+
+
+# Reporting the Numerical Correlation
+# prepare figure
+plt.figure(figsize=(16,8))
+plt.title('Correlation between All Numerical Feature', size=15)
+
+# create mask
+mask = np.triu(np.ones_like(df.corr()))
+# create colormap
+colormap = sns.color_palette("Blues")
+# plot heatmap
+sns.heatmap(table_crecard.corr(), annot=True, cmap=colormap, mask=mask)
+# sns.heatmap(df.corr(), annot=True, mask=mask)
+
+plt.show()
