@@ -15,7 +15,7 @@
 
 # 0. Importing Libraries
 import pandas as pd
-import numpy as np
+import plotly.express as px
 
 
 # 1. Reading the data set from Kaggle data
@@ -44,3 +44,6 @@ print(count_cust) # 1,627 attrited customers, i.e. customers that have cancelled
 
 count_cust_perc = table_crecard['Attrition_Flag'].value_counts(normalize='True')
 print(count_cust_perc) # 16 percent of customers have cancelled.
+
+
+# Creating a histogram graph
