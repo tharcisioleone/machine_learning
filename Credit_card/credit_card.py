@@ -27,6 +27,8 @@ print('x' * 60)
 
 
 # 2. Showing most important descriptive statistics of the data
+print(table_crecard.info) # see dataset info
+print('N' * 60)
 print(table_crecard.shape) # 10,127 rows and 23 columns
 print('-' * 60)
 print(table_crecard.head(5))
