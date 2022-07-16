@@ -52,7 +52,12 @@ print(count_cust_perc) # 16 percent of customers have cancelled.
 graph1 = px.histogram(table_crecard, x='Customer_Age', color='Attrition_Flag')
 graph1.show()
 
+
 # 6. Creating Looping to visualize all the graphs
 for columns in table_crecard:
     graph = px.histogram(table_crecard, x=columns, color='Attrition_Flag')
     graph.show()
+
+# 7. Mean Conclusions
+# a) The higher the number of contacts (Contacts_Count_12_mon), the higher the chance of cancellation.
+# b) The higher the number and volume of transactions (Total_Trans_Ct), the lower the chance of cancellation.
