@@ -12,8 +12,8 @@
 # 2. Showing most important descriptive statistics of the data
 # 3. Data handling
 # 4. Reporting the number of credit card cancellation
-# 5. Creating a histogram graph
-# 6. Creating Looping to visualize all the graphs
+# 5. Creating graphs to visualize the trends.
+
 
 # 0. Importing Libraries
 import pandas as pd
@@ -55,12 +55,11 @@ for columns in table_crecard:
     print(uniq, '\n============================\n')
 
 
-# 5. Creating a histogram graph
+# 5. Creating graphs to visualize the trends.
 graph1 = px.histogram(table_crecard, x='Customer_Age', color='Attrition_Flag')
 graph1.show()
 
-
-# 6. Creating Looping to visualize all the graphs
+# Using Loopings
 for columns in table_crecard:
     graph = px.histogram(table_crecard, x=columns, color='Attrition_Flag')
     graph.show()
