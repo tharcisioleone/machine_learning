@@ -28,7 +28,7 @@ print('x' * 60)
 
 # 2. Showing most important descriptive statistics of the data
 print(table_crecard.info) # see dataset info
-print('N' * 60)
+print('n' * 60)
 print(table_crecard.shape) # 10,127 rows and 23 columns
 print('-' * 60)
 print(table_crecard.head(5))
@@ -48,6 +48,11 @@ print(count_cust) # 1,627 attrited customers, i.e. customers that have cancelled
 
 count_cust_perc = table_crecard['Attrition_Flag'].value_counts(normalize='True')
 print(count_cust_perc) # 16 percent of customers have cancelled.
+
+# Finding unique values for each columns
+for columns in table_crecard:
+    uniq = table_crecard[columns].value_counts()
+    print(uniq, '\n============================\n')
 
 
 # 5. Creating a histogram graph
