@@ -38,6 +38,9 @@ table_crecard2 = table_crecard.drop('CLIENTNUM', axis=1) # Dropping column
 table_crecard3 = table_crecard.dropna() # Dropping rows with missing
 
 
-# 4. Creating a data analysis to identify the main reasons for the credit card cancellation
+# 4. Reporting the number of credit card cancellation
 count_cust = table_crecard['Attrition_Flag'].value_counts()
 print(count_cust) # 1,627 attrited customers, i.e. customers that have cancelled the credit card.
+
+count_cust_perc = table_crecard['Attrition_Flag'].value_counts(normalize='True')
+print(count_cust_perc)
