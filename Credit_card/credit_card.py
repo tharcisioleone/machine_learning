@@ -46,5 +46,9 @@ count_cust_perc = table_crecard['Attrition_Flag'].value_counts(normalize='True')
 print(count_cust_perc) # 16 percent of customers have cancelled.
 
 
-# Creating a histogram graph
+# 5. Creating a histogram graph
 graph1 = px.histogram(table_crecard, x='Customer_Age', color='Attrition_Flag')
+graph1.show()
+
+# 6. Creating Looping to visualize all the graphs
+
