@@ -39,3 +39,5 @@ table_crecard3 = table_crecard.dropna() # Dropping rows with missing
 
 
 # 4. Creating a data analysis to identify the main reasons for the credit card cancellation
+count_att = table_crecard['Attrition_Flag'].value_counts()
+print(count_att)
