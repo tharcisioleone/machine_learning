@@ -43,4 +43,4 @@ count_cust = table_crecard['Attrition_Flag'].value_counts()
 print(count_cust) # 1,627 attrited customers, i.e. customers that have cancelled the credit card.
 
 count_cust_perc = table_crecard['Attrition_Flag'].value_counts(normalize='True')
-print(count_cust_perc)
+print(count_cust_perc) # 16 percent of customers have cancelled.
