@@ -75,11 +75,10 @@ plt.figure(figsize=(16,8))
 plt.title('Correlation between All Numerical Feature', size=15)
 
 # create mask
-mask = np.triu(np.ones_like(df.corr()))
+mask = np.triu(np.ones_like(table_crecard.corr()))
 # create colormap
 colormap = sns.color_palette("Blues")
 # plot heatmap
 sns.heatmap(table_crecard.corr(), annot=True, cmap=colormap, mask=mask)
-# sns.heatmap(df.corr(), annot=True, mask=mask)
 
 plt.show()
