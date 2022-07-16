@@ -11,7 +11,9 @@
 # 1. Reading the data set from Kaggle data
 # 2. Showing most important descriptive statistics of the data
 # 3. Data handling
-# 4. Creating a data analysis to identify the main reasons for the credit card cancellation
+# 4. Reporting the number of credit card cancellation
+# 5. Creating a histogram graph
+# 6. Creating Looping to visualize all the graphs
 
 # 0. Importing Libraries
 import pandas as pd
