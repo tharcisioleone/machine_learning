@@ -51,6 +51,6 @@ graph1 = px.histogram(table_crecard, x='Customer_Age', color='Attrition_Flag')
 graph1.show()
 
 # 6. Creating Looping to visualize all the graphs
-for columns in table_crecard
+for columns in table_crecard:
     graph = px.histogram(table_crecard, x=columns, y='Attrition_Flag')
     graph.show()
