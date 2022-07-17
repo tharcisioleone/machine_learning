@@ -24,7 +24,7 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_palette('pastel')
-##
+
 
 # 1. Reading the data set from Kaggle data
 table_crecard = pd.read_csv('BankChurners.csv')
