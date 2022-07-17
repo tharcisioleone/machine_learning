@@ -14,7 +14,7 @@
 # 4. Reporting the number of credit card cancellation
 # 5. Creating graphs to visualize the trends.
 # 6. Mean Conclusions
-## 7. Reporting the Numerical Correlation
+# 7. Reporting the Numerical Correlation
 
 
 # 0. Importing Libraries
@@ -24,7 +24,7 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_palette('pastel')
-
+##
 
 # 1. Reading the data set from Kaggle data
 table_crecard = pd.read_csv('BankChurners.csv')
