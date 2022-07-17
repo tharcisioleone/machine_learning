@@ -14,7 +14,7 @@
 # 4. Reporting the number of credit card cancellation
 # 5. Creating graphs to visualize the trends.
 # 6. Mean Conclusions
-# 7. Reporting the Numerical Correlation
+## 7. Reporting the Numerical Correlation
 
 
 # 0. Importing Libraries
