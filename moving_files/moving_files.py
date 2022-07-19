@@ -15,7 +15,9 @@ import os
 # 1. Listing Files
 files = os.listdir()
 print(files)
+print('x'* 70)
 
 # 2. Including File Path
 path = os.getcwd()
 print(path)
+print('o'* 70)
