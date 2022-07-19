@@ -8,6 +8,7 @@
 # 3. Renaming Files
 # 4. Moving Files
 # 5. Copying Files
+# 6. Sorting files into the respective folders
 
 
 # 0. Importing Libraries
