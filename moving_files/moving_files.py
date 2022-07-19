@@ -32,7 +32,7 @@ print('o'* 70)
 #os.rename('Sales-1new.xlsx', 'Sales\Sales-1.xlsx') # To permit the code in line 36
 
 # 5. Copying Files
-shutil.copy2('Sales-2.xlsx', 'Sales\Sales-2.xlsx')
+#shutil.copy2('Sales-2.xlsx', 'Sales\Sales-2.xlsx')
 
 # 6. Sorting files into the respective folders
 list_files = os.listdir()
