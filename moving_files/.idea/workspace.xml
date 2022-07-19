@@ -5,14 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea340691-eb7f-46cd-93a6-1680cc6f5ccc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Purchases-AA987899.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Purchases-AD321146.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Purchases-EB192301.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Purchases-EF545455.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales-1.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales-2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales-3.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales-4.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/moving_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/moving_files.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

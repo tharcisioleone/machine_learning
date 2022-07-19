@@ -41,6 +41,6 @@ for file in list_files:
     if 'xlsx' in file:
         if 'Purchases' in file: # If title contains 'Purchases', then move the file to the folder 'Purchases'
             os.rename(file, f'Purchases\{file}')
-        elif 'Sales' in file:
+        elif 'Sales' in file: # If title contains 'Sales', then move the file to the folder 'Sales'
             os.rename(file, f'Sales\{file}')
 
