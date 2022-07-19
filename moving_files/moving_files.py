@@ -13,5 +13,5 @@
 import os
 
 # 1. Listing Files
-files = os.listdir()
-
+files = os.listdir('Sales')
+print(files)
