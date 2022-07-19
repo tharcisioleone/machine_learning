@@ -12,4 +12,4 @@
 # 0. Importing Libraries
 import os
 
-# 1. Listing File
+# 1. Listing Files
