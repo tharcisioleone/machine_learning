@@ -21,3 +21,6 @@ print('x'* 70)
 path = os.getcwd()
 print(path)
 print('o'* 70)
+
+# 3. Renaming Files
+os.rename('Sales-1.xlsx', 'Sales-1new.xlsx')
