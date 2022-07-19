@@ -13,3 +13,5 @@
 import os
 
 # 1. Listing Files
+files = os.listdir()
+
