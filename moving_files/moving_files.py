@@ -8,7 +8,7 @@
 # 3. Renaming Files
 # 4. Moving Files
 # 5. Copying Files
-# 6. Sorting files into the respective folders
+# 6. Sorting automatically files into the respective folders
 
 
 # 0. Importing Libraries
@@ -34,7 +34,7 @@ print('o'* 70)
 # 5. Copying Files
 #shutil.copy2('Sales-2.xlsx', 'Sales\Sales-2.xlsx')
 
-# 6. Sorting files into the respective folders
+# 6. Sorting automatically files into the respective folders
 list_files = os.listdir()
 
 for file in list_files:
