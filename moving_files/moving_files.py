@@ -24,7 +24,7 @@ print(path)
 print('o'* 70)
 
 # 3. Renaming Files
-os.rename('Sales-1.xlsx', 'Sales-1new.xlsx')
+#os.rename('Sales-1.xlsx', 'Sales-1new.xlsx') # To avoit the code in line 29
 
 # 4. Moving Files
-os.rename('Sales-1new.xlsx','Sales\Sales-1.xlsx')
+os.rename('Sales-1new.xlsx', 'Sales\Sales-1.xlsx')
