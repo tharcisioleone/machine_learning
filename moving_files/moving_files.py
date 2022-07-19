@@ -40,6 +40,7 @@ list_files = os.listdir()
 for file in list_files:
     if 'xlsx' in file:
         if 'Purchases' in file:
-            os.rename(file, 'Purchases\{file}')
+            os.rename(file, f'Purchases\{file}')
         elif 'Sales' in file:
+            os.rename(file, f'Sales\{file}')
 
