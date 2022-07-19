@@ -13,5 +13,9 @@
 import os
 
 # 1. Listing Files
-files = os.listdir('Sales')
+files = os.listdir()
 print(files)
+
+# 2. Including File Path
+path = os.getcwd()
+print(path)
