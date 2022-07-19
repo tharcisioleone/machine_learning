@@ -6,7 +6,8 @@
 # 1. Listing Files
 # 2. Showing File Path
 # 3. Renaming Files
-# 4. Copying Files
+# 4. Moving Files
+# 5. Copying Files
 
 
 # 0. Importing Libraries
@@ -24,3 +25,5 @@ print('o'* 70)
 
 # 3. Renaming Files
 os.rename('Sales-1.xlsx', 'Sales-1new.xlsx')
+
+# 4. Moving Files
