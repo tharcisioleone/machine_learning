@@ -27,3 +27,4 @@ print('o'* 70)
 os.rename('Sales-1.xlsx', 'Sales-1new.xlsx')
 
 # 4. Moving Files
+os.rename('Sales-1new.xlsx','Sales\Sales-1.xlsx')
