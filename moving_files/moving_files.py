@@ -1,5 +1,5 @@
 # Author: Tharcisio Leone #
-# Dataset: Coping and renaming files within the PC  #
+# Dataset: Moving automatically files  #
 
 ## Maschine Learning using Linear Regression
 # 0. Importing Libraries
