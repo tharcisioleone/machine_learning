@@ -12,6 +12,8 @@
 
 # 0. Importing Libraries
 import os
+import shutil
+
 importi shutil
 
 # 1. Listing Files
@@ -25,9 +27,10 @@ print(path)
 print('o'* 70)
 
 # 3. Renaming Files
-#os.rename('Sales-1.xlsx', 'Sales-1new.xlsx') # To avoit the code in line 29
+#os.rename('Sales-1.xlsx', 'Sales-1new.xlsx') # To permit the code in line 29
 
 # 4. Moving Files
 os.rename('Sales-1new.xlsx', 'Sales\Sales-1.xlsx')
 
 # 5. Copying Files
+shutil.copy2('Sales-2.xlsx', 'Sales\Sales-2.xlsx')
