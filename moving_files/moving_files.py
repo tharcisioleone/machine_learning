@@ -12,6 +12,7 @@
 
 # 0. Importing Libraries
 import os
+importi shutil
 
 # 1. Listing Files
 files = os.listdir()
@@ -28,3 +29,5 @@ print('o'* 70)
 
 # 4. Moving Files
 os.rename('Sales-1new.xlsx', 'Sales\Sales-1.xlsx')
+
+# 5. Copying Files
