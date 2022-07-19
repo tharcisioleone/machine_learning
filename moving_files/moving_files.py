@@ -29,15 +29,15 @@ print('o'* 70)
 
 
 # 3. Renaming Files
-#os.rename('Sales-1.xlsx', 'Sales-1new.xlsx') # To permit the code in line 29
+os.rename('Sales-1.xlsx', 'Sales-1new.xlsx') # To permit the code in line 29
 
 
 # 4. Moving Files
-#os.rename('Sales-1new.xlsx', 'Sales\Sales-1.xlsx') # To permit the code in line 36
+os.rename('Sales-1new.xlsx', 'Sales\Sales-1.xlsx') # To permit the code in line 36
 
 
 # 5. Copying Files
-#shutil.copy2('Sales-2.xlsx', 'Sales\Sales-2.xlsx')
+shutil.copy2('Sales-2.xlsx', 'Sales\Sales-2.xlsx')
 
 
 # 6. Sorting automatically files into the respective folders
