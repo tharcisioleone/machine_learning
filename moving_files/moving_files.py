@@ -14,8 +14,6 @@
 import os
 import shutil
 
-importi shutil
-
 # 1. Listing Files
 files = os.listdir()
 print(files)
@@ -30,7 +28,7 @@ print('o'* 70)
 #os.rename('Sales-1.xlsx', 'Sales-1new.xlsx') # To permit the code in line 29
 
 # 4. Moving Files
-os.rename('Sales-1new.xlsx', 'Sales\Sales-1.xlsx')
+#os.rename('Sales-1new.xlsx', 'Sales\Sales-1.xlsx') # To permit the code in line 36
 
 # 5. Copying Files
 shutil.copy2('Sales-2.xlsx', 'Sales\Sales-2.xlsx')
