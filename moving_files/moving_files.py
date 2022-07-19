@@ -33,3 +33,13 @@ print('o'* 70)
 
 # 5. Copying Files
 shutil.copy2('Sales-2.xlsx', 'Sales\Sales-2.xlsx')
+
+# 6. Sorting files into the respective folders
+list_files = os.listdir()
+
+for file in list_files:
+    if 'xlsx' in file:
+        if 'Purchases' in file:
+            os.rename(file, 'Purchases\{file}')
+        elif 'Sales' in file:
+
