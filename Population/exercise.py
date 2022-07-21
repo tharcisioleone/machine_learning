@@ -35,7 +35,7 @@ print('4' * 60)
 # 3. Data handling
 data_popwb2 = data_popwb.drop(['Indicator Name', 'Indicator Code'], axis = 1) # Dropping columns
 print(data_popwb2)
-print('1' * 60)
+print('5' * 60)
 data_popwb3 = data_popwb2.dropna(how = 'any', axis = 0) # Dropping rows with missing
 print(data_popwb3)
 print('2' * 60)
@@ -44,7 +44,7 @@ print('3' * 60)
 
 data_popwb4 = data_popwb3.insert(0, 'Region',['A', 'B', 'C'])
 print(data_popwb4) # List all columns
-print('5' * 60)
+print('6' * 60)
 
 # 3. Showing total population in the world
 print(data_popwb.loc[data_popwb['Country Code'] == 'WLD'])
