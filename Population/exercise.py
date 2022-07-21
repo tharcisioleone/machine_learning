@@ -28,7 +28,7 @@ print('1' * 60)
 print(data_popwb.info) # see first and last 5 rows
 print('2' * 60)
 print(data_popwb.info()) # Listing columns and (possible) missing
-print('-' * 60)
+print('3' * 60)
 print(data_popwb.describe(), round(1)) # Describing descriptive statistics
 print('O' * 60)
 
