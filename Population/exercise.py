@@ -22,7 +22,6 @@ import win32com.client as win32
 data_popwb = pd.read_csv('Datasets\API_SP.POP.TOTL_DS2_en_csv_v2_4251154.csv', skiprows=4) # skiprows=4 will skip the first 4 lines and try to read from 5 line
 #print(data_popwb)
 
-
 # 2. Showing most important descriptive statistics of the data
 print(list(data_popwb)) # List all columns
 print('S' * 60)
