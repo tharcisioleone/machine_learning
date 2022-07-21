@@ -24,9 +24,9 @@ data_popwb = pd.read_csv('Datasets\API_SP.POP.TOTL_DS2_en_csv_v2_4251154.csv', s
 
 # 2. Showing most important descriptive statistics of the data
 print(list(data_popwb)) # List all columns
-print('X' * 60)
+print('1' * 60)
 print(data_popwb.info) # see first and last 5 rows
-print('X' * 60)
+print('2' * 60)
 print(data_popwb.info()) # Listing columns and (possible) missing
 print('-' * 60)
 print(data_popwb.describe(), round(1)) # Describing descriptive statistics
