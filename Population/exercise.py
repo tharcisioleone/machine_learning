@@ -30,7 +30,7 @@ print('2' * 60)
 print(data_popwb.info()) # Listing columns and (possible) missing
 print('3' * 60)
 print(data_popwb.describe(), round(1)) # Describing descriptive statistics
-print('O' * 60)
+print('4' * 60)
 
 # 3. Data handling
 data_popwb2 = data_popwb.drop(['Indicator Name', 'Indicator Code'], axis = 1) # Dropping columns
