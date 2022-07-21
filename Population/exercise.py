@@ -38,7 +38,7 @@ print(data_popwb2)
 print('5' * 60)
 data_popwb3 = data_popwb2.dropna(how = 'any', axis = 0) # Dropping rows with missing
 print(data_popwb3)
-print('2' * 60)
+print('6' * 60)
 print(data_popwb3.isnull().sum()) # Checking if all columns have no null values
 print('3' * 60)
 
