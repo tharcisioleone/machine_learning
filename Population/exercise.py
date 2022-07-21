@@ -40,7 +40,7 @@ data_popwb3 = data_popwb2.dropna(how = 'any', axis = 0) # Dropping rows with mis
 print(data_popwb3)
 print('6' * 60)
 print(data_popwb3.isnull().sum()) # Checking if all columns have no null values
-print('3' * 60)
+print('7' * 60)
 
 data_popwb4 = data_popwb3.insert(0, 'Region',['A', 'B', 'C'])
 print(data_popwb4) # List all columns
