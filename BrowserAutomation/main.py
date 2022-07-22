@@ -14,13 +14,14 @@
 #pip install selenium
 #pip install webdriver-manager
 
-# 1. Importing Libraries
+# 1. Import Libraries
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 
-# 2. Installing updated version o Chrome Driver
+# 2. Install updated version o Chrome Driver
 service = Service(ChromeDriverManager().install())
 browser = webdriver.Chrome(service=service)
 
-# 2. Open the homepage of World Bank
+# 3. Open the homepage of World Bank
+browser.get('https://data.worldbank.org/indicator/SP.POP.TOTL')
