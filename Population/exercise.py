@@ -60,7 +60,6 @@ plt.xlabel('Year')
 plt.ylabel('Number of People')
 plt.show()
 
-
 # 6. Creating graphic visualization with the Top 5 highest populated countries
 most_popu = data_popwb.sort_values(by='2021', ascending=False).head()
 plt.figure(figsize=(7,5))
