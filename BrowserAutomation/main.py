@@ -1,7 +1,7 @@
 # Author: Tharcisio Leone #
-# Dataset: Sales Report #
+# Dataset: Performing browser automation with Selenium #
 
-## Create a sales report and send it per e-mail
+## Create an automation to download files in internet
 # 0. Importing Libraries
 # 1. Reading the data set
 # 2. Visualise the data set
