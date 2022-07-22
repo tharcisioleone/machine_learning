@@ -31,4 +31,4 @@ browser.get('https://data.worldbank.org/indicator/SP.POP.TOTL')
 
 
 # 4. Find and download the dataset
-browser.find_element('xpath', '//*[@id="mainChart"]/aside/div/div[2]/div/p/a[1]').click()
+browser.find_element('xpath', '/html/body/div/div/div/div/div[3]/article/aside/div/div[2]/div/p/a[1]').click()
