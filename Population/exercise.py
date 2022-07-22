@@ -1,4 +1,3 @@
-# APPLICATION PROCESS by STATISTA #
 # Author: Tharcisio Leone #
 # Dataset: Population (total) from The World Bank #
 
