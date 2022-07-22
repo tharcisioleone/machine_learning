@@ -4,7 +4,8 @@
 ## Create an automation to download files in internet
 # 0. Importing selenium and webdriver-manager
 # 1. Importing Libraries
-# 1. Reading the data set
+# 2. Open the homepage of World Bank
+# 3. Find and download the dataset
 
 
 # 0. Importing selenium and webdriver-manager
