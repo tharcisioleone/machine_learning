@@ -26,4 +26,5 @@ browser = webdriver.Chrome(service=service)
 # 3. Open the homepage of World Bank
 browser.get('https://data.worldbank.org/indicator/SP.POP.TOTL')
 
-navegador.find_element('xpath', '//*[@id="section-10356508"]/section/div[2]/div/div[2]/form/button').click()
+# 4. Find and download the dataset
+browser.find_element('xpath', '//*[@id="mainChart"]/aside/div/div[2]/div/p/a[1]').click()
