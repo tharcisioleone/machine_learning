@@ -11,3 +11,8 @@
 #Open Anaconda Prompt(anaconda3)
 #pip install selenium
 #pip install webdriver-manager
+
+# 1. Importing Libraries
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
