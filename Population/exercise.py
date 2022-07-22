@@ -2,7 +2,7 @@
 # Author: Tharcisio Leone #
 # Dataset: Population (total) from The World Bank #
 
-## Object: XXXX
+
 # 0. Importing Libraries
 # 1. Reading the data set
 # 2. Visualise the data set
