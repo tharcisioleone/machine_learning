@@ -7,7 +7,7 @@
 # 2. Visualise the data set
 # 3. Calculate the revenue per store
 # 4. Calculate the number of products sold per store
-# 5. Calculate the average ticket per store
+
 
 
 
