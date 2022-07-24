@@ -5,6 +5,7 @@
 # 0. Importing Libraries
 # 1. Reading the data sets
 # 2. Visualise the data set
+# 3. Replace one single item and save it
 
 
 # 0. Importing Libraries
@@ -26,3 +27,4 @@ for paragraph in document.paragraphs:
 
 document.save('Contract_Lira.docx')
 
+# 4. Filling automatically all the items
