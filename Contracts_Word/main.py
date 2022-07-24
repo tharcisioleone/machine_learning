@@ -55,7 +55,7 @@ for paragraph in document.paragraphs:
         value = references[code]
         paragraph.text = paragraph.text.replace(code, value)
 
-document.save(f"Contract - {nome}.docx")
+document.save(f"Contract - {name}.docx")
 
 
 # 5. Filling automatically all the items in all contracts
@@ -84,5 +84,5 @@ for row in table.index:
             value = references[code]
             paragraph.text = paragraph.text.replace(code, value)
 
-    document.save(f"Contract - {nome}.docx")
+    document.save(f"Contract - {name}.docx")
 
