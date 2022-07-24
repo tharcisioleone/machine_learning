@@ -20,3 +20,9 @@ print(document)
 for paragraph in document.paragraphs:
     print(paragraph.text)
 
+# 3. Replace one single item and save it
+for paragraph in document.paragraphs:
+    paragraph.text = paragraph.text.replace("XXXX", "Lira")
+
+document.save('Contract_Lira.docx')
+
