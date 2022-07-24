@@ -27,4 +27,27 @@ for paragraph in document.paragraphs:
 
 document.save('Contract_Lira.docx')
 
-# 4. Filling automatically all the items
+# 4. Filling automatically all the items in a single contract
+document = Document('Contract.docx')
+
+nome = 'Lira'
+item1 = 'Car'
+item2 = 'Notebook'
+item3 = 'Smartphone'
+
+references = {
+        "XXXX": nome,
+        "YYYY": item1,
+        "ZZZZ": item2,
+        "WWWW": item3,
+        "DD": str(datetime.now().day),
+        "MM": str(datetime.now().month),
+        "AAAA": str(datetime.now().year),
+    }
+
+for paragraph in document.paragraphs:
+    for code in references:
+        value = references[code]
+        paragraph.text = paragraph.text.replace(code, value)
+
+document.save(f"Contract - {nome}.docx")
