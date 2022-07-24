@@ -52,3 +52,6 @@ for paragraph in document.paragraphs:
         paragraph.text = paragraph.text.replace(code, value)
 
 document.save(f"Contract - {nome}.docx")
+
+
+# 5. Filling automatically all the items in all contracts
