@@ -62,21 +62,21 @@ document.save(f"Contract - {name}.docx")
 
 
 # 5. Filling automatically ALL the items in ALL contracts
-table = pd.read_excel("Information.xlsx")
+table = pd.read_excel('Information.xlsx')
 
 for row in table.index:
-    document = Document("Contract.docx")
+    document = Document('Contract.docx')
 
-    name = table.loc[row, "Name"]
-    item1 = table.loc[row, "Item1"]
-    item2 = table.loc[row, "Item2"]
-    item3 = table.loc[row, "Item3"]
+    name = table.loc[row, 'Name']
+    item1 = table.loc[row, 'Item1']
+    item2 = table.loc[row, 'Item2']
+    item3 = table.loc[row, 'Item3']
 
     references = {
-        "XXXX": name,
-        "YYYY": item1,
-        "ZZZZ": item2,
-        "WWWW": item3,
+        'XXXX': name,
+        'YYYY': item1,
+        'ZZZZ': item2,
+        'WWWW': item3,
         "DD": str(datetime.now().day),
         "MM": str(datetime.now().month),
         "AAAA": str(datetime.now().year),
