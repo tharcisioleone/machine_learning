@@ -10,9 +10,13 @@
 # 5. Filling automatically all the items in all contracts
 
 # 0. Importing Libraries
+import pandas as pd
+import numpy as np
+import openpyxl as opx
 from docx import Document
 from datetime import datetime
-import pandas as pd
+
+
 
 # 1. Reading the data set
 document = Document('Contract.docx')
