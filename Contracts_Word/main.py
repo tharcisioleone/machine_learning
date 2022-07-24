@@ -59,7 +59,7 @@ document.save(f"Contract - {nome}.docx")
 
 
 # 5. Filling automatically all the items in all contracts
-tabela = pd.read_excel("Informações.xlsx")
+table = pd.read_excel("Information.xlsx")
 
 for linha in tabela.index:
     documento = Document("Contrato.docx")
