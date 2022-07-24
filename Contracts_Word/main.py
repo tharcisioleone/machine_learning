@@ -61,7 +61,7 @@ for paragraph in document.paragraphs:
 document.save(f"Contract - {name}.docx")
 
 
-# 5. Filling automatically ALL the items in all contracts
+# 5. Filling automatically ALL the items in ALL contracts
 table = pd.read_excel("Information.xlsx")
 
 for row in table.index:
