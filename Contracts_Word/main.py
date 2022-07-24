@@ -64,10 +64,10 @@ table = pd.read_excel("Information.xlsx")
 for row in table.index:
     document = Document("Contract.docx")
 
-    name = tabela.loc[row, "Name"]
-    item1 = tabela.loc[row, "Item1"]
-    item2 = tabela.loc[row, "Item2"]
-    item3 = tabela.loc[row, "Item3"]
+    name = table.loc[row, "Name"]
+    item1 = table.loc[row, "Item1"]
+    item2 = table.loc[row, "Item2"]
+    item3 = table.loc[row, "Item3"]
 
     referencias = {
         "XXXX": nome,
