@@ -44,13 +44,13 @@ item2 = 'Notebook'
 item3 = 'Smartphone'
 
 references = {
-        "XXXX": name,
-        "YYYY": item1,
-        "ZZZZ": item2,
-        "WWWW": item3,
-        "DD": str(datetime.now().day),
-        "MM": str(datetime.now().month),
-        "AAAA": str(datetime.now().year),
+        'XXXX': name,
+        'YYYY': item1,
+        'ZZZZ': item2,
+        'WWWW': item3,
+        'DD': str(datetime.now().day),
+        'MM': str(datetime.now().month),
+        'AAAA': str(datetime.now().year),
     }
 
 for paragraph in document.paragraphs:
