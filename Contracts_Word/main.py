@@ -87,5 +87,5 @@ for row in table.index:
             value = references[code]
             paragraph.text = paragraph.text.replace(code, value)
 
-    document.save(f"Contract - {name}.docx")
+    document.save(f'Contract - {name}.docx')
 
