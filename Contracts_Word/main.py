@@ -9,3 +9,5 @@
 
 # 0. Importing Libraries
 from docx import Document
+
+# 1. Reading the data sets
