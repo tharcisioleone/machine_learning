@@ -16,6 +16,7 @@ from docx import Document
 document = Document('Contract.docx')
 print(document)
 
+# 2. Visualise the data set
 for paragraph in document.paragraphs:
     print(paragraph.text)
 
