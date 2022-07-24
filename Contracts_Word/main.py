@@ -35,13 +35,13 @@ document.save('Contract_Lira.docx')
 # 4. Filling automatically all the items in a single contract
 document = Document('Contract.docx')
 
-nome = 'Lira'
+name = 'Lira'
 item1 = 'Car'
 item2 = 'Notebook'
 item3 = 'Smartphone'
 
 references = {
-        "XXXX": nome,
+        "XXXX": name,
         "YYYY": item1,
         "ZZZZ": item2,
         "WWWW": item3,
@@ -61,8 +61,8 @@ document.save(f"Contract - {nome}.docx")
 # 5. Filling automatically all the items in all contracts
 table = pd.read_excel("Information.xlsx")
 
-for linha in tabela.index:
-    documento = Document("Contrato.docx")
+for row in table.index:
+    document = Document("Contract.docx")
 
     nome = tabela.loc[linha, "Nome"]
     item1 = tabela.loc[linha, "Item1"]
