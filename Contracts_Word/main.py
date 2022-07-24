@@ -69,8 +69,8 @@ for row in table.index:
     item2 = table.loc[row, "Item2"]
     item3 = table.loc[row, "Item3"]
 
-    referencias = {
-        "XXXX": nome,
+    references = {
+        "XXXX": name,
         "YYYY": item1,
         "ZZZZ": item2,
         "WWWW": item3,
@@ -79,9 +79,10 @@ for row in table.index:
         "AAAA": str(datetime.now().year),
     }
 
-    for paragrafo in documento.paragraphs:
-        for codigo in referencias:
-            valor = referencias[codigo]
-            paragrafo.text = paragrafo.text.replace(codigo, valor)
+    for paragraph in document.paragraphs:
+        for code in references:
+            value = references[code]
+            paragraph.text = paragraph.text.replace(code, value)
 
-    documento.save(f"Contrato - {nome}.docx")
+    document.save(f"Contract - {nome}.docx")
+
