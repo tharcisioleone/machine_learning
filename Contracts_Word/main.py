@@ -30,7 +30,7 @@ for paragraph in document.paragraphs:
 
 # 3. Replace one single item and save it
 for paragraph in document.paragraphs:
-    paragraph.text = paragraph.text.replace("XXXX", "Lira")
+    paragraph.text = paragraph.text.replace('XXXX', 'Lira')
 
 document.save('Contract_Lira.docx')
 
