@@ -22,9 +22,11 @@ from datetime import datetime
 document = Document('Contract.docx')
 print(document)
 
+
 # 2. Visualise the data set
 for paragraph in document.paragraphs:
     print(paragraph.text)
+
 
 # 3. Replace one single item and save it
 for paragraph in document.paragraphs:
