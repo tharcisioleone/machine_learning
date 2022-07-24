@@ -8,8 +8,14 @@
 
 
 # 0. Importing Libraries
+import pandas as pd
+import openpyxl as opy
 from docx import Document
 
 # 1. Reading the data set
 document = Document('Contract.docx')
 print(document)
+
+for paragraph in document.paragraphs:
+    print(paragraph.text)
+
