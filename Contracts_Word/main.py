@@ -58,7 +58,7 @@ for paragraph in document.paragraphs:
         value = references[code]
         paragraph.text = paragraph.text.replace(code, value)
 
-document.save(f"Contract - {name}.docx")
+document.save(f'Contract - {name}.docx')
 
 
 # 5. Filling automatically ALL the items in ALL contracts
