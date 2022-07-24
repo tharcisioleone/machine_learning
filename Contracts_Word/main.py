@@ -7,7 +7,5 @@
 # 2. Visualise the data set
 
 
-
-
-
 # 0. Importing Libraries
+from docx import Document
