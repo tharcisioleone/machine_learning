@@ -9,9 +9,9 @@
 # 4. Filling automatically all the items
 
 # 0. Importing Libraries
-import pandas as pd
-import openpyxl as opy
 from docx import Document
+from datetime import datetime
+import pandas as pd
 
 # 1. Reading the data set
 document = Document('Contract.docx')
