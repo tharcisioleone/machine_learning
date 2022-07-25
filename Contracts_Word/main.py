@@ -11,7 +11,7 @@
 
 # 0. Importing Libraries
 import pandas as pd
-import numpy as np
+
 import openpyxl as opx
 from docx import Document
 from datetime import datetime
