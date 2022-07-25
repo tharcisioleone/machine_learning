@@ -17,7 +17,6 @@ from docx import Document
 from datetime import datetime
 
 
-
 # 1. Reading the data set
 document = Document('Contract.docx')
 print(document)
