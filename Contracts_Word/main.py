@@ -1,6 +1,7 @@
 # Author: Tharcisio Leone #
 # Dataset: Filling Contract Automatically  #
 
+
 ## Join data from two different tables
 # 0. Importing Libraries
 # 1. Reading the data sets
@@ -12,7 +13,7 @@
 # 0. Importing Libraries
 import pandas as pd
 import numpy as np
-
+import openpyxl as opx
 from docx import Document
 from datetime import datetime
 
