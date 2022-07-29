@@ -4,7 +4,7 @@
 ## Join data from two different tables
 # 0. Importing Libraries
 # 1. Reading the data sets
-
+# 2. Visualise the data set
 
 
 
