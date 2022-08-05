@@ -9,6 +9,7 @@
 # 4. Filling automatically all the items in a single contract
 # 5. Filling automatically all the items in all contracts
 
+
 # 0. Importing Libraries
 import pandas as pd
 import numpy as np
