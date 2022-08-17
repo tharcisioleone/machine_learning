@@ -2,7 +2,7 @@
 # Dataset: Filling Contract Automatically  #
 
 ## Join data from two different tables
-# 0.  
+# 0. Importing
 # 1. Reading the data sets
 # 2. Visualise the data set
 # 3. Replace one single item and save it
