@@ -7,7 +7,7 @@
 # 2. Visualise the data set
 # 3. Replace one single item and save it
 # 4. Filling automatically all the items in a single contract
-# 5. Filling automatically all the items in all contracts
+# 5. Filling automatically all the items in
 
 
 # 0. Importing Libraries
