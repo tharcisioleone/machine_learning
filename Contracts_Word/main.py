@@ -4,7 +4,7 @@
 ## Join data from two different tables
 # 0.
 # 1.
-# 2. Visualise the 
+# 2. Visualise
 # 3. Replace one single item and save it
 # 4. Filling automatically all the items in a single contract
 # 5. Filling automatically all the items in all contracts
