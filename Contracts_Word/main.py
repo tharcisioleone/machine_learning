@@ -6,7 +6,7 @@
 # 1. Reading the data sets
 # 2. Visualise the data set
 # 3. Replace one single item and save it
-# 4. Filling automatically all the 
+# 4. Filling automatically 
 # 5. Filling automatically all the items in all contracts
 
 
