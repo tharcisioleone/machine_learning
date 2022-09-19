@@ -3,7 +3,7 @@
 
 ## Join data from two different tables
 
-
+# 1. Reading the data sets
 # 2. Visualise the data set
 # 3. Replace one single item and save it
 # 4. Filling automatically all the items in a single contract
