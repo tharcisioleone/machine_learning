@@ -7,7 +7,7 @@
 
 
 
-# 5. Filling automatically all the items in all contracts
+
 
 
 # 0. Importing Libraries
