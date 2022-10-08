@@ -4,7 +4,7 @@
 ## Join data from two different tables
 # 0. Importing Libraries
 # 1. Reading the data sets
-# 2. Visualise the data set
+
 
 # 4. Filling automatically all the items in a single contract
 # 5. Filling automatically all the items in all contracts
