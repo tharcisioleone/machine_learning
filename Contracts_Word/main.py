@@ -3,7 +3,7 @@
 
 ## Join data from two different tables
 # 0. Importing Libraries
-
+# 1. Reading the data sets
 
 
 # 4. Filling automatically all the items in a single contract
